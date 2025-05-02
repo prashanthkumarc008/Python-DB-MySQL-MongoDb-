@@ -2,8 +2,8 @@ from pymongo import MongoClient
 
 try:
     client=MongoClient('mongodb://localhost:27017/')
-    db=client['11am']
-    prod_col=db['products']
+    db=client['pacchu']
+    prod_col=db['myCollection']
     
     products=prod_col.find({})
 
